@@ -1,0 +1,18 @@
+
+var money = prompt ('what is your spending limit?')
+
+while (isNaN(money) || money == null || money <= 0) 
+    {money = prompt ('what is your spending limit?')
+    }
+    
+var cost = prompt ('what is the cost of the item?');
+
+while (money > 0 && cost != null)
+ {money = money - cost;
+ alert (money) 
+  cost = prompt ('what is the cost of the item?')
+}
+
+if (money <= 0) 
+alert ('you\'re all out of money!')
+  
