@@ -5,6 +5,34 @@ while (isNaN(money) || money == null || money <= 0)
     {money = prompt ('what is your spending limit?')
     }
     
+var cost = 0;
+
+while (money > 0 && cost != null){
+ cost = prompt ('what is the cost of the item?');
+
+  if (isNaN(cost) || cost <= 0){ 
+   break;
+  }
+  
+  if (Number(money) < Number(cost)){
+   alert ('Too expensive');
+  } else {
+    money = money - cost;
+ }
+ }
+ 
+ if (money > 0){ 
+ alert ('Money remaining : $' + money);
+}
+ 
+  
+  
+var money = prompt ('what is your spending limit?')
+
+while (isNaN(money) || money == null || money <= 0) 
+    {money = prompt ('what is your spending limit?')
+    }
+    
 var cost = prompt ('what is the cost of the item?');
 
 while (money > 0 && cost != null)
